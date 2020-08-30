@@ -18,6 +18,10 @@ This project uses C++ 11, and it depends on:
 - [libigl](https://github.com/libigl/libigl) (`git clone https://github.com/libigl/libigl.git --recursive`)
 - [eigen](http://eigen.tuxfamily.org/) (e.g. `brew install eigen`)
 
+For your convenience:
+- `libigl` is used as a submodule (`ext/libigl`), so just use that (`git submodule update`).
+- `eigen` is embedded in version 3.3.7 (`ext/eigen`).
+
 ### Compile this project
     mkdir build
     cd build
@@ -30,6 +34,8 @@ This project uses C++ 11, and it depends on:
 
    Note: this library only works on triangle mesh.
    
+You can also find a library version called `DecimaterLib` among the cmake targets.
+
 ### Various strictness
 
 Seamless criteria is even stricter than UV shape preservation. I add a "strictness" parameter to satisfy different requirements. Strictness could be 0, 1, or 2.
