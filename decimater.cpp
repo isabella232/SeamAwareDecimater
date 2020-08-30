@@ -10,13 +10,6 @@ void usage( const char* argv0 )
     exit(-1);
 }
 
-enum SeamAwareDegree
-{
-	NoUVShapePreserving,
-	UVShapePreserving,
-	Seamless
-};
-
 }
 
 int main( int argc, char* argv[] ) {

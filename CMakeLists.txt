@@ -36,6 +36,12 @@ add_library(DEC_LIBS
     decimate.cpp
     collapse_edge_seam.cpp
     )
+
+add_library(DecimaterLib
+	SHARED
+  export_lib.cpp
+  $<TARGET_OBJECTS:DEC_LIBS>
+)
     
 add_executable(decimater
 	decimater.cpp

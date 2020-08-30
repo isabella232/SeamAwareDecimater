@@ -29,6 +29,14 @@ namespace {
 	}
 }
 
+
+enum SeamAwareDegree
+{
+	NoUVShapePreserving = 0,
+	UVShapePreserving = 1,
+	Seamless = 2
+};
+
 /*
 Decimates a triangle mesh down to a target number of vertices,
 preserving the UV parameterization.
